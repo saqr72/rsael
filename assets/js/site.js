@@ -98,6 +98,8 @@
     ['contact', 'تواصل', 'contact.html']
   ];
 
+  var MAIL = '<svg class="brand-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 8.1 5.6a2 2 0 0 0 2.2 0L21 6.5"/></svg>';
+
   function buildHeader(slot) {
     var page = body.dataset.page || '';
     var links = NAV.map(function (n) {
@@ -109,7 +111,7 @@
       '<header class="site-header" id="siteHeader">' +
         '<div class="container header-inner">' +
           '<a class="brand" href="index.html" aria-label="' + esc(D.brand.ar) + ' ' + esc(D.brand.latin) + ' — الرئيسية">' +
-            BIRD +
+            MAIL +
             '<span class="brand-texts">' +
               '<span class="brand-word">' + esc(D.brand.ar) + '</span>' +
               '<span class="brand-tag">' + esc(D.brand.latin) + '</span>' +

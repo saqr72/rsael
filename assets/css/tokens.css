@@ -29,7 +29,7 @@
 
   /* ----- الخطوط ----- */
   --font-brand:"Aref Ruqaa",serif;                 /* الشعار/الكلام اليدوي */
-  --font-head:"Cairo","Tajawal",sans-serif;        /* العناوين */
+  --font-head:"Alexandria","Tajawal",sans-serif;   /* العناوين والأزرار */
   --font-body:"Tajawal","Segoe UI",system-ui,sans-serif; /* النصوص */
   --font-latin:"Poppins",sans-serif;               /* اللاتيني والعناوين الفرعية */
 

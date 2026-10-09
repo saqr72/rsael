@@ -27,6 +27,7 @@
 }
 .brand-texts{display:flex;flex-direction:column;align-items:flex-start}
 .brand .bird{width:20px;height:14px;color:var(--gold);opacity:.9;flex:none}
+.brand .brand-mail{width:23px;height:23px;color:var(--gold);flex:none;transform:translateY(-1px)}
 
 .main-nav{display:flex;align-items:center;gap:4px}
 .main-nav a{
@@ -78,7 +79,7 @@
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:9px;
   min-height:50px;padding:12px 22px;border-radius:14px;border:2px solid transparent;
-  font-family:var(--font-body);font-size:15.5px;font-weight:700;cursor:pointer;
+  font-family:var(--font-head);font-size:15.5px;font-weight:700;cursor:pointer;
   text-align:center;transition:transform var(--dur-fast) var(--ease),
     box-shadow var(--dur-fast) ease,background var(--dur-fast) ease,color var(--dur-fast) ease;
   -webkit-tap-highlight-color:transparent;
