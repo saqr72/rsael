@@ -153,10 +153,8 @@ window.RISAEL = {
     },
 
     /* ----- حلويات ----- */
-    /* صورة الميني بان كيك: "american pancakes fruit strawberry blueberry honey"
-       لـ johnvoo_photographer — الترخيص CC BY 2.0 (flickr.com/photos/138248475@N03/24331823965) */
     {
-      id: 'mini-pancakes', cat: 'sweets', art: 'sweets', img: 'assets/img/products/mini-pancakes.jpg',
+      id: 'mini-pancakes', cat: 'sweets', art: 'sweets', img: '',
       ar: 'ميني بان كيك', en: 'Mini Pancakes',
       price: 12, featured: true,
       desc: 'ميني بان كيك طازج يُحضَّر عند الطلب.'
