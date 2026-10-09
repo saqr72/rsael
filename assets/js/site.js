@@ -58,7 +58,7 @@
     sweets: '<svg ' + S + '><ellipse cx="12" cy="18" rx="8.4" ry="3.1"/><ellipse cx="12" cy="13.6" rx="6.9" ry="2.8"/><ellipse cx="12" cy="9.7" rx="5.3" ry="2.5"/><path d="M9.8 6.3h4.4v2.1H9.8z"/><path d="M17.8 10.6c1.2.6 1.8 1.7 1.6 2.9"/></svg>'
   };
 
-  var BIRD = '<svg class="bird" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 30" fill="currentColor" aria-hidden="true"><path d="M3 21.5c6.8 3.4 13.6 2.5 20-2.6-.6 2.6-.2 5 1.4 7.1-2.9-.6-5.6-.1-8.2 1.6-1.5-2.2-3.7-3.9-6.6-4.9-2.1.8-4.4.8-6.6-.1 1.7-1.3 2.9-2.9 3.5-4.8-1.6.3-3 .1-4.4-.6 1.4-1.1 2.3-2.6 2.6-4.4 2.3 1.6 4.6 2.6 7 3 2.4-4.9 6-8.6 10.8-11.1-1.4 3.4-1.6 6.6-.6 9.7 4-3.4 8.6-5 13.9-4.7-3.6 1.7-6.4 4.1-8.4 7.3 3-.6 5.9-.2 8.7 1.2-3.4.9-6.2 2.6-8.5 5.1 2.4.3 4.5 1.3 6.4 3-4.6.6-9-.6-13.2-3.6-4.3 3.1-9.3 4.6-15 4.6-2.1 0-4.1-.2-6-.7Z"/></svg>';
+  var MAILMARK = '<svg class="mail-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 8.1 5.6a2 2 0 0 0 2.2 0L21 6.5"/></svg>';
 
   /* ============================================================
      روابط ودوال مساعدة
@@ -333,7 +333,7 @@
 
   /* واجهة مشتركة للاستخدام من صفحات أخرى */
   window.RISAEL_UI = {
-    $: $, $$: $$, esc: esc, icon: icon, BIRD: BIRD, ART: ART,
+    $: $, $$: $$, esc: esc, icon: icon, MAILMARK: MAILMARK, ART: ART,
     waHref: waHref, fmtPrice: fmtPrice, starsHTML: starsHTML,
     catById: catById, productById: productById,
     productCardHTML: productCardHTML, emptyStateHTML: emptyStateHTML, offersHTML: offersHTML,

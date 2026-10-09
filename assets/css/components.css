@@ -26,7 +26,6 @@
   color:rgba(255,253,246,.55);margin-top:2px;
 }
 .brand-texts{display:flex;flex-direction:column;align-items:flex-start}
-.brand .bird{width:20px;height:14px;color:var(--gold);opacity:.9;flex:none}
 .brand .brand-mail{width:23px;height:23px;color:var(--gold);flex:none;transform:translateY(-1px)}
 
 .main-nav{display:flex;align-items:center;gap:4px}
@@ -219,10 +218,9 @@
   font-size:clamp(11px,2vw,14px);letter-spacing:.42em;text-indent:.42em;
   color:rgba(23,19,10,.72);
 }
-.signboard .bird{
+.signboard .mail-mark{
   position:absolute;top:clamp(10px,2.5vw,18px);inset-inline-end:clamp(14px,4vw,26px);
-  width:clamp(26px,5vw,40px);height:auto;color:var(--ink);opacity:.85;
-  transform:rotate(-8deg);
+  width:clamp(22px,4vw,32px);height:auto;color:var(--ink);opacity:.8;
 }
 
 /* ============================================================

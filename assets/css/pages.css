@@ -208,9 +208,8 @@
   position:absolute;inset-inline:0;bottom:-2px;height:30%;
   background:var(--gold);opacity:.20;border-radius:100% 100% 0 0/70% 70% 0 0;
 }
-.product-media .bird{
-  position:absolute;top:18px;inset-inline-end:20px;width:38px;color:var(--ink);opacity:.5;
-  transform:rotate(-8deg);
+.product-media .mail-mark{
+  position:absolute;top:18px;inset-inline-end:20px;width:30px;color:var(--ink);opacity:.45;
 }
 .p-info{display:flex;flex-direction:column;gap:16px}
 .p-info h1{font-size:clamp(28px,6vw,40px)}
