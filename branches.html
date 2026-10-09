@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الفروع | رسائل — الحوية، الطائف</title>
+<meta name="description" content="فروع رسائل — العنوان، ساعات العمل، رقم التواصل، وخريطة الموقع مع زر الاتجاهات المباشر.">
+<meta name="theme-color" content="#100D06">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23F8B000'/><text x='32' y='47' font-size='42' font-family='serif' font-weight='bold' text-anchor='middle' fill='%2317130A'>ر</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body data-page="branches">
+
+<div data-site-header>
+  <noscript>
+    <div class="noscript-bar">التنقل: <a href="index.html">الرئيسية</a> · <a href="menu.html">المنيو</a> · <a href="contact.html">تواصل</a></div>
+  </noscript>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">الفروع</p>
+      <h1>زورونا في رسائل</h1>
+      <p class="page-sub">عنوان واضح، ساعات عمل، وزر اتجاهات مباشرة — كل ما تحتاجه للوصول إلينا.</p>
+      <ul class="hero-facts">
+        <li class="chip chip--dark" id="branchCount">فرع واحد حاليًا</li>
+        <li class="chip chip--dark">مفتوح 24 ساعة</li>
+      </ul>
+    </div>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
+        <path fill="#F8B000" fill-opacity=".55" d="M0 40C240 84 460 6 720 30c260 24 480 58 720 14v46H0Z"/>
+        <path fill="#FFFCF4" d="M0 58C240 96 460 26 720 48c260 22 480 48 720 16v26H0Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div id="branchesList" style="display:grid;gap:20px"></div>
+
+      <div class="section-head" style="margin-top:36px">
+        <p class="eyebrow">الموقع على الخريطة</p>
+        <h2 class="section-title">كيف تصل إلينا</h2>
+      </div>
+      <div class="map-embed reveal" id="branchMap">
+        <a class="map-link" href="https://www.google.com/maps/dir/?api=1&destination=21.4456325%2C40.4804008" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 20.5 3.5l-7.7 17-2.1-7.2-7.2-2.1Z"/></svg>
+          فتح في خرائط Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div data-site-footer></div>
+<div data-action-bar></div>
+
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/branches.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>قيّم تجربتك | رسائل</title>
+<meta name="description" content="قيّم تجربتك في رسائل خلال ثوانٍ — النجوم والملاحظة، والإرسال عبر واتساب أو خرائط Google.">
+<meta name="theme-color" content="#100D06">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23F8B000'/><text x='32' y='47' font-size='42' font-family='serif' font-weight='bold' text-anchor='middle' fill='%2317130A'>ر</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@600;700;900&family=Tajawal:wght@400;500;700&family=Poppins:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body data-page="rate">
+
+<div data-site-header>
+  <noscript>
+    <div class="noscript-bar">التنقل: <a href="index.html">الرئيسية</a> · <a href="menu.html">المنيو</a> · <a href="contact.html">تواصل</a></div>
+  </noscript>
+</div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">التقييم</p>
+      <h1>قيّم رسائل</h1>
+      <p class="page-sub">رأيك يصنع الفرق — التقييم لا يأخذ منك أكثر من ثانية.</p>
+    </div>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" focusable="false">
+        <path fill="#F8B000" fill-opacity=".55" d="M0 40C240 84 460 6 720 30c260 24 480 58 720 14v46H0Z"/>
+        <path fill="#FFFCF4" d="M0 58C240 96 460 26 720 48c260 22 480 48 720 16v26H0Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container rate-wrap">
+
+      <div class="card rate-card">
+
+        <!-- ملخص التقييم الحالي -->
+        <div class="rate-summary" id="rateSummary"></div>
+
+        <h2 class="rate-q">كيف كانت تجربتك معنا؟</h2>
+
+        <div class="rate-stars" id="rateStars" role="radiogroup" aria-label="قيّم من 1 إلى 5 نجوم">
+          <button type="button" class="rate-star" role="radio" aria-checked="false" aria-label="1 من 5 نجوم">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+          </button>
+          <button type="button" class="rate-star" role="radio" aria-checked="false" aria-label="2 من 5 نجوم">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+          </button>
+          <button type="button" class="rate-star" role="radio" aria-checked="false" aria-label="3 من 5 نجوم">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+          </button>
+          <button type="button" class="rate-star" role="radio" aria-checked="false" aria-label="4 من 5 نجوم">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+          </button>
+          <button type="button" class="rate-star" role="radio" aria-checked="false" aria-label="5 من 5 نجوم">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+          </button>
+        </div>
+
+        <p class="rate-msg" id="rateMsg" role="status" aria-live="polite">اختر عدد النجوم</p>
+
+        <textarea class="rate-note" id="rateNote" placeholder="اكتب ملاحظتك هنا (اختياري) — مثلاً: قهوة اليوم كانت ممتازة…" aria-label="ملاحظتك (اختياري)"></textarea>
+
+        <div class="rate-actions" id="rateActions" hidden>
+          <a class="btn btn--wa btn--block" id="rateWa" href="#" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.01-1.04 2.47 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.7.63.72.22 1.37.2 1.88.11.58-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26A9.89 9.89 0 0 1 12.1 2.1a9.83 9.83 0 0 1 6.99 2.9 9.83 9.83 0 0 1 2.89 6.99 9.9 9.9 0 0 1-9.89 9.89m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5.0.16 5.34.16 11.89c0 2.1.55 4.15 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41Z"/></svg>
+            <span>شاركنا ملاحظتك عبر واتساب</span>
+          </a>
+          <a class="btn btn--outline btn--block" id="rateGoogle" href="#" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.6Z"/></svg>
+            <span>قيّمنا على خرائط Google</span>
+          </a>
+        </div>
+
+        <div class="rate-thanks" id="rateThanks">
+          <span class="t-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6.5 9.5 17 4.5 12"/></svg></span>
+          <h3>شكرًا لك!</h3>
+          <p>تقييمك يهمنا — شكراً لأنك خصصت لنا وقتك.</p>
+        </div>
+
+        <p class="rate-links">تريد تقييمًا أطول؟ <a href="https://www.google.com/maps/place/%D8%B1%D8%B3%D8%A7%D8%A6%D9%84%E2%80%AD/@21.4456325,40.4804008,17z/data=!4m6!3m5!1s0x15ea2f63ca0c11bd:0x591b43fc066da98a!8m2!3d21.4456325!4d40.4804008!16s%2Fg%2F11lf8056rr" target="_blank" rel="noopener">اذهب إلى صفحة التقييمات على خرائط Google ←</a></p>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<div data-site-footer></div>
+<div data-action-bar></div>
+
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/rate.js" defer></script>
+</body>
+</html>
