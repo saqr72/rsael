@@ -85,5 +85,5 @@
   /* مسار التصفح */
   $('#crumbCat').textContent = cat.ar;
   var crumbLink = $('#crumbCatLink');
-  if (crumbLink) crumbLink.href = 'menu.html?cat=' + encodeURIComponent(p.cat);
+  if (crumbLink) crumbLink.href = 'menu?cat=' + encodeURIComponent(p.cat);
 })();

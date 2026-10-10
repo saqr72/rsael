@@ -90,12 +90,12 @@
      الهيدر
      ============================================================ */
   var NAV = [
-    ['home', 'الرئيسية', 'index.html'],
-    ['menu', 'المنيو', 'menu.html'],
-    ['branches', 'الفروع', 'branches.html'],
-    ['offers', 'العروض', 'offers.html'],
-    ['rate', 'التقييم', 'rate.html'],
-    ['contact', 'تواصل', 'contact.html']
+    ['home', 'الرئيسية', '/'],
+    ['menu', 'المنيو', 'menu'],
+    ['branches', 'الفروع', 'branches'],
+    ['offers', 'العروض', 'offers'],
+    ['rate', 'التقييم', 'rate'],
+    ['contact', 'تواصل', 'contact']
   ];
 
   var MAIL = '<svg class="brand-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 8.1 5.6a2 2 0 0 0 2.2 0L21 6.5"/></svg>';
@@ -110,7 +110,7 @@
       '<a class="skip-link" href="#main">تخطي إلى المحتوى</a>' +
       '<header class="site-header" id="siteHeader">' +
         '<div class="container header-inner">' +
-          '<a class="brand" href="index.html" aria-label="' + esc(D.brand.ar) + ' ' + esc(D.brand.latin) + ' — الرئيسية">' +
+          '<a class="brand" href="/" aria-label="' + esc(D.brand.ar) + ' ' + esc(D.brand.latin) + ' — الرئيسية">' +
             MAIL +
             '<span class="brand-texts">' +
               '<span class="brand-word">' + esc(D.brand.ar) + '</span>' +
@@ -208,7 +208,7 @@
      ============================================================ */
   var BARS = {
     home: [
-      { label: 'المنيو', href: 'menu.html', cls: 'btn--gold', icon: 'cup' },
+      { label: 'المنيو', href: 'menu', cls: 'btn--gold', icon: 'cup' },
       { label: 'اطلب واتساب', href: null, wa: true, cls: 'btn--wa', icon: 'wa' }
     ],
     menu: [
@@ -269,7 +269,7 @@
       art += '<img class="p-img" src="' + esc(p.img) + '" alt="" loading="lazy" decoding="async" onerror="this.remove()">';
     }
     return '' +
-      '<a class="product-card' + (opts.plain ? '' : ' reveal') + (opts.cls ? ' ' + opts.cls : '') + '" href="product.html?id=' + encodeURIComponent(p.id) + '">' +
+      '<a class="product-card' + (opts.plain ? '' : ' reveal') + (opts.cls ? ' ' + opts.cls : '') + '" href="product?id=' + encodeURIComponent(p.id) + '">' +
         '<span class="p-media">' + art + '</span>' +
         '<span class="p-body">' +
           '<span class="p-cat">' + esc(cat.en) + '</span>' +
